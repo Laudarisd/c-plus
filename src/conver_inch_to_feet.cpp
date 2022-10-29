@@ -1,20 +1,21 @@
-#include <iostream>
+/*  C++ Program to convert inches to feet yards and inches  */
 
-using namsespace std;
+#include<iostream>
+using namespace std;
 
 int main()
 {
-    int i, f, convert_to_feet, convert_to_inch;
-    cout << "Enter inch:";
-    cin >> i;
-    cout << "Enter feet:";
-    cin >> f;
+    int y,f,i;
+    cout<<"Enter Inches to Convert ::";
+    cin>>i;
 
-    convert_to_feet = i / 12;
-    convert_to_inch = f * 12;
+    y=i/432;
+    i=i%432;
+    f=i/12;
+    i=i%12;
 
-    cout << "The result is " << convert_to_feet << " feet\n" << endl;
-    cout << "The result is " << convert_to_inch << " inch" << endl;
+    cout<<"\nAfter Conversion from inches to feet, yards and inches :: \n";
+    cout<<"\nYards = "<<y<<"\n\nFeet = "<<f<<"\n\nInches = "<<i<<"\n";
 
     return 0;
 }
